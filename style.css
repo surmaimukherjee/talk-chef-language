@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #1f1d1d;
+    --secondary-color: #c41a4a;
+}
+
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url('/images/dragons.jpg');
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navigation h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+#input {
+    height: 25vh;
+    width: 60%;
+    display: block;
+    margin: 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+    background-color: #9c9494;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+#btn-translate {
+    padding: 0.5rem;
+    font-size: 1rem;
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+
+}
+
+#output {
+    height: 25vh;
+    width: 60%;
+    border: 1px solid black;
+    padding: 1.5rem 1rem;
+    margin: 2rem;
+    text-align: center;
+    position: relative;
+    background-color: #9c9494;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer i {
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+
+.footer p {
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .navigation h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    #input {
+        font-size: 1rem;
+    }
+
+    #output {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .navigation h1 {
+        font-size: 1.5rem;
+    }
+}
